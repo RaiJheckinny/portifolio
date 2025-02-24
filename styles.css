@@ -1,0 +1,260 @@
+*{
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+.info_inicio{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 200px;
+}
+#header{
+    position: fixed;
+    width: 100%;
+}
+#linhaheader{
+    width: 100%;
+}
+.component_header{
+    height: 55px;
+    display: flex;
+    width: 101.4%;
+    background-color: black
+}
+#component_header_div{
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.paragrado_header{
+    color: white;
+    font-family: 'Orbitron', sans-serif;
+    font-weight: bold;
+    font-size: 26px;
+}
+#div_paragrafo{
+    display: flex;
+    justify-items: center;
+    align-items: center;
+}
+#paragrafo_header2{
+    color: blue;
+}
+#button{
+    background-color: transparent;
+    color: white;
+    font-family: "Arial Black", Gadget, sans-serif;
+    font-size: 18px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+#button:hover{
+    color:blue;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 200vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: black;
+    width: 101.3%;
+    margin: -8px;
+}
+#inicio{
+  width: 100%;
+  height: 100vh;
+  background-image: url('./imagens/PapelDeParedeInicio.png');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  padding-bottom: 100px;
+}
+.titulo{
+    color: white;
+    margin-bottom: 5px;
+    display: inline-block;
+}
+
+#titulo1{
+    font-size: 24px;
+    font-family: 'Press Start 2P', cursive
+}
+
+#titulo2{
+    font-size: 30px;
+    font-weight: bold;
+    font-family: "Arial Black", Gadget, sans-serif;
+
+    width: 0;
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 2px solid white;
+    animation: digitar 4s steps(35) infinite;
+}
+@keyframes digitar {
+    from {
+      width: 0;
+    }
+    to {
+      width: 105%;
+    }
+  }
+
+#titulo3{
+    font-size: 27px;
+    font-family: 'Playfair Display', serif;
+}
+.favicon{
+ height: 40px;
+ width: 40px;
+ margin-top: 15px;
+ margin-bottom: 15px;
+ margin-left: 15px;
+ margin-right: 15px;
+ cursor: pointer; 
+}
+#iconlinkedin{
+    background-image: url(./imagens/linkedin40x40.png);
+}
+#icongithub{
+    background-image: url(./imagens/github40x40.png);
+}
+#iconemail{
+    background-image: url(./imagens/email40x40.png);
+}
+.linhahorizontal{
+    width: 80px;
+    height: 2px;
+    background-color: white;
+}
+#contato{
+    display: flex;
+    align-items: center;
+}
+.linhavertical{
+    width: 2px;
+    height: 80px;
+    background-color: white;
+}
+#component_scroll{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+    height: 40%;
+    margin-bottom: 100px;
+}
+#sobre{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 80%;
+    background-image: url('./imagens/PapelDeParedeSobre.png');
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 9%;
+}
+#linhaSobre{
+    width: 370px;
+}
+#titulo5{
+    font-size: 27px;
+    margin-bottom: 10px;
+}
+#titulos6{
+    padding-top: 10px;
+    font-size: 25px;
+    width: 100%;
+    font-family: 'Courier New', Courier, monospace
+}
+.imgSobre{
+    height: 20px;
+    width: 20px;
+    padding: 10px;
+}
+#componentTecnologias{
+    display: flex;
+    padding-top: 5%;
+
+}
+.componentTecnologia{
+    display: flex;
+    flex-direction: column;
+    height: 100px;
+    width: 200px;
+    background-color: #545454;
+    align-items: center;
+    padding-top: 30px;
+    border-radius: 5px;
+    justify-content: end;
+    margin-left: 8px;
+}
+#imgJava{
+    background-image: url('./imagens/java40x40.png');
+}
+#imgSpring{
+    background-image: url('./imagens/spring40x40.png')
+}
+#imgAngular{
+    background-image: url('./imagens/angular40x40.png')
+}
+#imgJavaScript{
+    background-image: url('./imagens/javaScript40x40.png')
+}
+#imgPostgreSQL{
+    background-image: url('./imagens/postgresql40x40.png')
+}
+#imgMongoDB{
+    background-image: url('./imagens/mongodb40x40.png')
+}
+#imgDocker{
+    background-image: url('./imagens/docker40x40.png')
+}
+#imgGit{
+    background-image: url('./imagens/git40x40.png')
+}
+.barraHorizontal{
+    height: 5px;
+    width: 100%;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    transition: background-color 0.3s ease;
+    background-color: blue
+    
+
+}
+#titulo7{
+    font-size: 20px;
+    padding: 8px;
+}
+.componentTecnologia:hover .barraHorizontal{
+    background-color: white;
+}
+#linhaProjeto{
+    width: 830px;
+}
+#projetos{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 80%;
+    background-image: url('./imagens/PapelDeParedeSobre.png');
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 9%;
+}
+#componentProjeto{
+    display: flex;
+    margin-top: 40px;
+}
+#imgPendente{
+    background-image: url('./imagens/projetopentente40x40.png');
+}
