@@ -104,13 +104,14 @@ body{
       width: 0;
     }
     to {
-      width: 105%;
+      width: 100%;
     }
   }
 
 #titulo3{
     font-size: 27px;
     font-family: 'Playfair Display', serif;
+    text-align: center;
 }
 .favicon{
  height: 40px;
@@ -201,26 +202,87 @@ body{
     background-image: url('./imagens/java40x40.png');
 }
 #imgSpring{
-    background-image: url('./imagens/spring40x40.png')
+    background-image: url('./imagens/spring40x40.png');
 }
 #imgAngular{
-    background-image: url('./imagens/angular40x40.png')
+    background-image: url('./imagens/angular40x40.png');
 }
 #imgJavaScript{
-    background-image: url('./imagens/javaScript40x40.png')
+    background-image: url('./imagens/javaScript40x40.png');
 }
 #imgPostgreSQL{
-    background-image: url('./imagens/postgresql40x40.png')
+    background-image: url('./imagens/postgresql40x40.png');
 }
 #imgMongoDB{
-    background-image: url('./imagens/mongodb40x40.png')
+    background-image: url('./imagens/mongodb40x40.png');
 }
 #imgDocker{
-    background-image: url('./imagens/docker40x40.png')
+    background-image: url('./imagens/docker40x40.png');
 }
 #imgGit{
-    background-image: url('./imagens/git40x40.png')
+    background-image: url('./imagens/git40x40.png');
 }
+#imgLogin{
+    width: 400px;
+            height: 400px;
+            background-image: url('./imagens/login400x400.png');
+            background-size: cover;
+            background-position: center;
+            transition: background-image 0.3s ease-in-out;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+}
+
+
+#imgLogin:hover{
+    background-image: url('./imagens/login400x400branco.png');
+}
+
+#imgLogin:hover #titulo9 {
+    display: block;
+}
+
+#titulo9 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+    color: black;
+    font-size: 20px;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-align: center;
+    font-family: "Poppins", "Arial", sans-serif;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    width: 80%;
+}
+
+#imgMeme{
+    width: 400px;
+    height: 400px;
+    background-image: url('./imagens/meme400x400.png');
+    background-size: cover;
+    background-position: center;
+    transition: background-image 0.3s ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+#imgMeme:hover{
+    background-image: url('./imagens/meme400x400branco.png');
+}
+
+#imgMeme:hover #titulo9 {
+    display: block;
+}
+
 .barraHorizontal{
     height: 5px;
     width: 100%;
@@ -254,7 +316,41 @@ body{
 #componentProjeto{
     display: flex;
     margin-top: 40px;
+    gap: 30px;
 }
 #imgPendente{
     background-image: url('./imagens/projetopentente40x40.png');
+}
+#servicos{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 80%;
+    background-image: url('./imagens/PapelDeParedeSobre.png');
+    padding-top: 9%;
+}
+.componentServicosContrataveis{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 400px;
+    width: 400px;
+    border: 2px solid white;
+    padding: 30px;
+    border-radius: 20px;
+    margin-right: 30px;
+}
+
+
+#titulo8{
+    font-size: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+}
+.componentProjeto{
+    display: flex;
+    height: 400px;
+    width: 400px;
+    border-radius: 20px;
 }
